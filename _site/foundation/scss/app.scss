@@ -65,8 +65,21 @@
 /*---------------------defualt styles----------------------*/
 
 h3 {font-size:1.3em}
-table {width:100%;background-color: green;}
+table {width:100%;background-color: #cecece;}
+.center {text-align:center;}
 
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {
+  font-size: 40px;
+}
+
+.panel {
+  [class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {
+    margin: 0 auto;display:block;
+    text-align: center;
+  }
+}
 
 /*---------------------brand variations----------------------*/
 $brown : #87644f;

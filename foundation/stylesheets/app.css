@@ -9793,16 +9793,35 @@ h3 {
 /* line 68, ../scss/app.scss */
 table {
   width: 100%;
-  background-color: green;
+  background-color: #cecece;
+}
+
+/* line 69, ../scss/app.scss */
+.center {
+  text-align: center;
+}
+
+/* line 71, ../scss/app.scss */
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {
+  font-size: 40px;
+}
+
+/* line 77, ../scss/app.scss */
+.panel [class^="flaticon-"]:before, .panel [class*=" flaticon-"]:before,
+.panel [class^="flaticon-"]:after, .panel [class*=" flaticon-"]:after {
+  margin: 0 auto;
+  display: block;
+  text-align: center;
 }
 
 /*---------------------brand variations----------------------*/
-/* line 73, ../scss/app.scss */
+/* line 86, ../scss/app.scss */
 .Bag {
   /*-----vars------*/
   /*-----grid------*/
 }
-/* line 74, ../scss/app.scss */
+/* line 87, ../scss/app.scss */
 .Bag .site-header {
   border-bottom: solid 2px #87644f;
   border-top: solid 2px #87644f;
@@ -9811,64 +9830,64 @@ table {
   margin-left: auto;
   margin-right: auto;
 }
-/* line 75, ../scss/app.scss */
+/* line 88, ../scss/app.scss */
 .Bag h1, .Bag p, .Bag section, .Bag a, .Bag .accordion .accordion-navigation > a, .Bag .accordion dd > a, .Bag body {
   color: #87644f;
 }
-/* line 76, ../scss/app.scss */
+/* line 89, ../scss/app.scss */
 .Bag .top-bar {
   background-color: transparent;
   color: #87644f;
 }
-/* line 77, ../scss/app.scss */
+/* line 90, ../scss/app.scss */
 .Bag .top-bar .title-area, .Bag .top-bar-section ul {
   background-color: transparent;
 }
-/* line 78, ../scss/app.scss */
+/* line 91, ../scss/app.scss */
 .Bag .top-bar .name h1 a, .Bag .top-bar-section li:not(.has-form) a:not(.button) {
   color: #87644f;
   background-color: #fff;
 }
-/* line 79, ../scss/app.scss */
+/* line 92, ../scss/app.scss */
 .Bag .accordion .accordion-navigation > a, .Bag .accordion dd > a {
   background-color: #fff;
   border-bottom: solid 2px #87644f;
 }
-/* line 80, ../scss/app.scss */
+/* line 93, ../scss/app.scss */
 .Bag .pdp__share, .Bag .ratings {
   display: none;
 }
 @media only screen and (min-width: 40.063em) {
-  /* line 83, ../scss/app.scss */
+  /* line 96, ../scss/app.scss */
   .Bag .row, .Bag .site-header {
     max-width: 40.063em;
   }
 }
 @media only screen and (min-width: 64.063em) {
-  /* line 88, ../scss/app.scss */
+  /* line 101, ../scss/app.scss */
   .Bag .row, .Bag .site-header {
     max-width: 64.063em;
   }
 }
 @media only screen and (min-width: 90.063em) {
-  /* line 93, ../scss/app.scss */
+  /* line 106, ../scss/app.scss */
   .Bag .row, .Bag .site-header {
     max-width: 90.063em;
   }
 }
 @media only screen and (min-width: 120.063em) {
-  /* line 98, ../scss/app.scss */
+  /* line 111, ../scss/app.scss */
   .Bag .row, .Bag .site-header {
     max-width: 120.063em;
   }
 }
-/* line 105, ../scss/app.scss */
+/* line 118, ../scss/app.scss */
 .Bag .button {
   background-color: #87644f;
   color: #fff;
 }
 @media only screen and (min-width: 40.063em) {
-  /* line 108, ../scss/app.scss */
+  /* line 121, ../scss/app.scss */
   .Bag .pdp__image {
     position: relative;
     padding-left: 0.625rem;
@@ -9883,7 +9902,7 @@ table {
   }
 }
 @media only screen and (min-width: 40.063em) {
-  /* line 122, ../scss/app.scss */
+  /* line 135, ../scss/app.scss */
   .Bag .pdp__details {
     position: relative;
     padding-left: 0.625rem;
@@ -9899,41 +9918,41 @@ table {
   }
 }
 
-/* line 138, ../scss/app.scss */
+/* line 151, ../scss/app.scss */
 .Shirt {
   /*-----grid------*/
 }
-/* line 139, ../scss/app.scss */
+/* line 152, ../scss/app.scss */
 .Shirt h1, .Shirt p, .Shirt section, .Shirt a, .Shirt .accordion .accordion-navigation > a, .Shirt .accordion dd > a, .Shirt body {
   font-family: Georgia, serif;
 }
-/* line 141, ../scss/app.scss */
+/* line 154, ../scss/app.scss */
 .Shirt .button {
   background-color: #fff;
   border: solid 4px green;
   color: #000;
 }
-/* line 142, ../scss/app.scss */
+/* line 155, ../scss/app.scss */
 .Shirt .button:hover {
   background-color: green;
 }
-/* line 143, ../scss/app.scss */
+/* line 156, ../scss/app.scss */
 .Shirt .pdp__offer {
   color: #cecece;
 }
 @media only screen and (min-width: 40.063em) {
-  /* line 147, ../scss/app.scss */
+  /* line 160, ../scss/app.scss */
   .Shirt img, .Shirt dl {
     box-shadow: 0px 0px 29px #cecece;
     margin: 20px;
   }
-  /* line 148, ../scss/app.scss */
+  /* line 161, ../scss/app.scss */
   .Shirt dl {
     margin-left: 0;
   }
 }
 @media only screen and (min-width: 40.063em) {
-  /* line 152, ../scss/app.scss */
+  /* line 165, ../scss/app.scss */
   .Shirt .pdp__image {
     position: relative;
     padding-left: 0.625rem;
@@ -9948,7 +9967,7 @@ table {
   }
 }
 @media only screen and (min-width: 40.063em) {
-  /* line 166, ../scss/app.scss */
+  /* line 179, ../scss/app.scss */
   .Shirt .pdp__details {
     position: relative;
     padding-left: 0.625rem;
