@@ -1,0 +1,9 @@
+---
+layout: product
+title:  "Bag"
+long: "Apollon"
+date:   2014-11-19 14:46:57
+categories: paper
+price : £23.00 
+---
+Sun God and patron of the arts, Apollo is known for his great beauty. The city business man chooses a chic and elegant design for a sophisticated formal bag. 

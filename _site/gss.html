@@ -1,0 +1,137 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Demo  - Demo</title>
+  <meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+">
+  <link rel="stylesheet" href="/federated/foundation/stylesheets/app.css">
+  <script src="/federated/foundation/bower_components/modernizr/modernizr.js"></script>
+  <link rel="canonical" href="http://demo.com/federated/gss.html">
+  <link rel="alternate" type="application/atom+xml" title="Demo" href="http://demo.com/federated/feed.xml" />
+</head>
+  <body data-grid-framework="f4" data-grid-color="blue" data-grid-opacity="0.5" data-grid-zindex="10" data-grid-gutterwidth="20px" data-grid-nbcols="12">
+    <div class="container ">
+    	<header class="site-header">
+  <nav class="top-bar" data-topbar role="navigation">
+  <ul class="title-area">
+    <li class="name">
+      <h1><a href="#">My Site</a></h1>
+    </li>
+     <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+    <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+  </ul>
+
+  <section class="top-bar-section">
+    <!-- Right Nav Section -->
+    <ul class="right">
+      <li class="active"><a href="/federated/plp.html">PLP</a></li>
+      <li class="has-dropdown">
+        <a href="#">Right Button Dropdown</a>
+        <ul class="dropdown">
+          <li><a href="#">First link in dropdown</a></li>
+          <li class="active"><a href="#">Active link in dropdown</a></li>
+        </ul>
+      </li>
+    </ul>
+
+    <!-- Left Nav Section -->
+    <ul class="left">
+      <li><a href="#">Left Nav Button</a></li>
+    </ul>
+  </section>
+</nav>
+</header>
+
+<div class="content" id="content">
+	<div class="row">
+	  <div class="small-12 columns">
+		    <div class="row">
+  <div class="small-12 columns">
+    <h1 id="kitchen-sink">GSS</h1>
+  </div>
+</div>
+
+
+<script>
+GSS_CONFIG = {
+
+  // Web Worker
+  // URL to worker must be set!
+  worker: '../dist/worker.js',
+  useWorker: !!window.Worker,
+
+  // Cassowary defaults
+  defaultStrength: 'weak', // 'weak', 'medium', 'strong', 'required'
+  defaultWeight: 0,
+
+  // FOUC prevention
+  // adds "gss-ready" and removes "gss-not-ready" classes on html tag
+  readyClass: true,
+
+  // Fractional pixels values
+  // bad for text, good for accuracy
+  fractionalPixels: true,
+
+  // Scrollbar size offset
+  verticalScroll: true,
+  horizontalScroll: false,
+
+  // Mutation Observer
+  observe: true,
+  observerOptions: {
+    subtree: true,
+    childList: true,
+    attributes: true,
+    characterData: true
+  },
+
+  // Callback to process variables before setting DOM
+  processBeforeSet: null, // function
+
+  // ::window resize debounce time
+  resizeDebounce: 32, // (ms)
+
+  // Logging
+  debug: false,
+  warn: false,
+  perf: false
+
+};
+</script>
+<script src="/federated/bower_components/gss/dist/gss.js"></script>
+		</div>
+	</div>	
+</div>
+<footer class="site-footer">
+
+
+</footer>
+
+
+
+
+    </div>
+  <script src="/federated/foundation/bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="/federated/foundation/bower_components/foundation/js/foundation.min.js"></script>
+  <script src="/federated/foundation/js/app.js"></script>
+  <div class="u-breakpoints"> 
+    <p class="panel">
+      <strong class="show-for-small-only">small</strong>
+      <strong class="show-for-medium-only">medium</strong>
+      <strong class="show-for-large-only">large</strong>
+      <strong class="show-for-xlarge-only">xlarge</strong>
+    </p>  
+
+        <a href="#" class="js-show-grid">Show grid</a>
+    <script>
+        $(".js-show-grid").on("click", function() {          
+          $('head').append("<script type='text/javascript' src='http://alefeuvre.github.com/foundation-grid-displayer/gd-bookmarklet.min.js'><link rel='stylesheet' type='text/css' href='http://alefeuvre.github.com/foundation-grid-displayer/stylesheets/gd-bookmarklet.min.css'>");
+        });
+    </script> 
+
+  </div>
+  </body>
+</html>

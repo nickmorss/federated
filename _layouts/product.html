@@ -1,0 +1,67 @@
+---
+layout: default
+---
+{% include header.html %}
+<div class="content" id="content">
+	<div class="row">
+	  <div class="small-12 columns">
+			
+
+	    	<div class="pdp row" itemscope itemtype="http://schema.org/Product">
+		    	<div class="pdp__image">
+		    		<img src="{{ site.baseurl }}/foundation/img/examples/{{ page.title }}.png" />
+		    	</div>
+		    	<div class="pdp__details">
+			    	<h1 itemprop="name">{{ page.long }}</h1>
+			    	<div class="pdp__offer" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+		    			<p><span itemprop="priceCurrency" content="GBP">&pound;</span><span itemprop="price" content="245.00">245.00</span></p>
+		    			<link itemprop="availability" href="http://schema.org/InStock" />In stock
+		    			<br />
+			    	</div>
+			    	<div class="pdp__action">
+			<a href="{{ site.baseurl }}/cart.html" class="button">Add To Cart</a>
+			    	</div>
+
+			    	<div class="pdp__share">
+						<!-- Go to www.addthis.com/dashboard to customize your tools -->
+						<div class="addthis_sharing_toolbox"></div>
+					</div>
+
+
+			    	<div class="pdp__description">
+		    			<dl class="accordion" data-accordion>
+						  <dd class="accordion-navigation">
+						    <a href="#panel1">Description</a>
+						    <div id="panel1" class="content active" itemprop="description">
+						    		{{ content }}
+
+						    </div>
+						  </dd>
+						  <dd class="accordion-navigation ratings">
+						    <a href="#panel2">Ratings and Reviews</a>
+						    <div id="panel2" class="content">
+<div itemprop="aggregateRating"
+    itemscope itemtype="http://schema.org/AggregateRating">
+   Rated <span itemprop="ratingValue">3.5</span>/5
+   based on <span itemprop="reviewCount">11</span> customer reviews
+  </div>						    </div>
+						  </dd>
+						  <dd class="accordion-navigation">
+						    <a href="#panel3">Shipping Instructions</a>
+						    <div id="panel3" class="content">
+						      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+						    </div>
+						  </dd>
+						</dl>
+			    	</div>
+			    </div>		
+	    	</div>	
+
+		</div>
+	</div>	
+</div>
+
+				    	<!-- Go to www.addthis.com/dashboard to customize your tools -->
+						<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-547765082b607281" async="async"></script>
+
+{% include footer.html %}

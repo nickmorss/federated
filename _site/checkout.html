@@ -1,0 +1,39 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Demo  - Demo</title>
+  <meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+">
+  <link rel="stylesheet" href="/federated/foundation/stylesheets/app.css">
+  <script src="/federated/foundation/bower_components/modernizr/modernizr.js"></script>
+  <link rel="canonical" href="http://demo.com/federated/checkout.html">
+  <link rel="alternate" type="application/atom+xml" title="Demo" href="http://demo.com/federated/feed.xml" />
+</head>
+  <body data-grid-framework="f4" data-grid-color="blue" data-grid-opacity="0.5" data-grid-zindex="10" data-grid-gutterwidth="20px" data-grid-nbcols="12">
+    <div class="container ">
+    	<h1>Checkout</h1>
+    </div>
+  <script src="/federated/foundation/bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="/federated/foundation/bower_components/foundation/js/foundation.min.js"></script>
+  <script src="/federated/foundation/js/app.js"></script>
+  <div class="u-breakpoints"> 
+    <p class="panel">
+      <strong class="show-for-small-only">small</strong>
+      <strong class="show-for-medium-only">medium</strong>
+      <strong class="show-for-large-only">large</strong>
+      <strong class="show-for-xlarge-only">xlarge</strong>
+    </p>  
+
+        <a href="#" class="js-show-grid">Show grid</a>
+    <script>
+        $(".js-show-grid").on("click", function() {          
+          $('head').append("<script type='text/javascript' src='http://alefeuvre.github.com/foundation-grid-displayer/gd-bookmarklet.min.js'><link rel='stylesheet' type='text/css' href='http://alefeuvre.github.com/foundation-grid-displayer/stylesheets/gd-bookmarklet.min.css'>");
+        });
+    </script> 
+
+  </div>
+  </body>
+</html>

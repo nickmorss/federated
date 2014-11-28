@@ -1,0 +1,28 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  {% include head.html %}
+  <body data-grid-framework="f4" data-grid-color="blue" data-grid-opacity="0.5" data-grid-zindex="10" data-grid-gutterwidth="20px" data-grid-nbcols="12">
+    <div class="container {{ page.title }}">
+    	{{ content }}
+    </div>
+  <script src="{{ site.baseurl }}/foundation/bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="{{ site.baseurl }}/foundation/bower_components/foundation/js/foundation.min.js"></script>
+  <script src="{{ site.baseurl }}/foundation/js/app.js"></script>
+  <div class="u-breakpoints"> 
+    <p class="panel">
+      <strong class="show-for-small-only">small</strong>
+      <strong class="show-for-medium-only">medium</strong>
+      <strong class="show-for-large-only">large</strong>
+      <strong class="show-for-xlarge-only">xlarge</strong>
+    </p>  
+
+        <a href="#" class="js-show-grid">Show grid</a>
+    <script>
+        $(".js-show-grid").on("click", function() {          
+          $('head').append("<script type='text/javascript' src='http://alefeuvre.github.com/foundation-grid-displayer/gd-bookmarklet.min.js'><link rel='stylesheet' type='text/css' href='http://alefeuvre.github.com/foundation-grid-displayer/stylesheets/gd-bookmarklet.min.css'>");
+        });
+    </script> 
+
+  </div>
+  </body>
+</html>

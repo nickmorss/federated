@@ -1,0 +1,8 @@
+---
+layout: product
+title:  "Tie"
+date:   2014-11-19 14:46:57
+categories: chair 
+price : £50.95
+---
+black suspension

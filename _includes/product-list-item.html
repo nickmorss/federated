@@ -1,0 +1,76 @@
+<li>
+    <div class="callout panel">
+      
+      <div class="title">
+       
+        <h3><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
+
+        <i>sku # 12345678</i>
+      </div>
+      
+      <div class="row">
+        <div class="columns small-4 small-push-8 medium-12 medium-reset-order">
+          <div class="row price">
+            <div class="columns small-6">
+                     Ab
+                          <span class="bigPrice">
+                            {{ post.price }}
+                          </span>        
+              </div>
+              <div class="columns small-6">             
+                      <div class="skuUomPricing">
+                        Stück
+                          <br>
+                          ab 100 Stück
+                      </div>
+                      <div class="skuVatInfo">
+                        (<span class="smallPriceWithTax">2,84 €</span> inkl. USt)      
+                      </div>   
+               </div>
+          </div>           
+        </div>
+        <div class="columns small-8 small-pull-4 medium-12 medium-reset-order">
+          
+      <table>
+        <tr>
+          <td>price</td>
+          <td>4 x 15</td>
+          <td>£45.00</td>
+         </tr>
+        <tr>
+          <td>price</td>
+          <td>4 x 15</td>
+          <td>£45.00</td>
+         </tr>
+        <tr>
+          <td>price</td>
+          <td>4 x 15</td>
+          <td>£45.00</td>
+         </tr>
+        <tr>
+          <td>price</td>
+          <td>4 x 15</td>
+          <td>£45.00</td>
+         </tr>
+       </table> 
+
+        </div>
+      </div>
+      
+
+      <div class="row action">
+          <div class="large-12 columns">
+            <div class="row collapse">
+              <div class="small-10 columns">
+                <input type="text" placeholder="Hex Value">
+              </div>
+              <div class="small-2 columns">
+                <a href="{{ post.url | prepend: site.baseurl }}" class="button postfix">Go</a>
+              </div>
+            </div>
+            <a href="#">price shipping costs</a>
+          </div>
+      </div>    
+                    
+      </div>
+      </li>
